@@ -13,6 +13,8 @@
 		98C49B701E551B5C00A6BFA1 /* Practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98C49B6E1E551B5C00A6BFA1 /* Practice.xcdatamodeld */; };
 		98C49B721E551B5C00A6BFA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C49B711E551B5C00A6BFA1 /* Assets.xcassets */; };
 		98C49B751E551B5C00A6BFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C49B731E551B5C00A6BFA1 /* LaunchScreen.storyboard */; };
+		98C49B7D1E551F9600A6BFA1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C49B7C1E551F9600A6BFA1 /* Task.swift */; };
+		98C49B7F1E5524E200A6BFA1 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C49B7E1E5524E200A6BFA1 /* CreateTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		98C49B711E551B5C00A6BFA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C49B741E551B5C00A6BFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C49B761E551B5C00A6BFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98C49B7C1E551F9600A6BFA1 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		98C49B7E1E5524E200A6BFA1 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				98C49B671E551B5B00A6BFA1 /* AppDelegate.swift */,
 				98C49B691E551B5B00A6BFA1 /* ViewController.swift */,
+				98C49B7E1E5524E200A6BFA1 /* CreateTaskViewController.swift */,
 				98C49B6B1E551B5B00A6BFA1 /* Main.storyboard */,
+				98C49B7C1E551F9600A6BFA1 /* Task.swift */,
 				98C49B711E551B5C00A6BFA1 /* Assets.xcassets */,
 				98C49B731E551B5C00A6BFA1 /* LaunchScreen.storyboard */,
 				98C49B761E551B5C00A6BFA1 /* Info.plist */,
@@ -99,6 +105,7 @@
 				TargetAttributes = {
 					98C49B631E551B5B00A6BFA1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LGYESA6J2F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C49B7D1E551F9600A6BFA1 /* Task.swift in Sources */,
 				98C49B6A1E551B5B00A6BFA1 /* ViewController.swift in Sources */,
 				98C49B681E551B5B00A6BFA1 /* AppDelegate.swift in Sources */,
 				98C49B701E551B5C00A6BFA1 /* Practice.xcdatamodeld in Sources */,
+				98C49B7F1E5524E200A6BFA1 /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LGYESA6J2F;
 				INFOPLIST_FILE = Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Doubi.Practice;
@@ -276,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LGYESA6J2F;
 				INFOPLIST_FILE = Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Doubi.Practice;
