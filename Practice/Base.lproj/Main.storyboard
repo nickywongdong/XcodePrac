@@ -46,11 +46,30 @@
                     <connections>
                         <outlet property="tableView" destination="z53-yh-XrX" id="X1c-Iz-3XI"/>
                         <segue destination="PFI-gN-gsk" kind="show" identifier="addSegue" id="RxV-U8-qsF"/>
+                        <segue destination="gyD-ec-wT4" kind="show" identifier="selectTaskSegue" id="s21-0d-jIj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000.8" y="141.67916041979012"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DGN-hX-12t">
+            <objects>
+                <viewController id="gyD-ec-wT4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wmR-8c-IfL"/>
+                        <viewControllerLayoutGuide type="bottom" id="xkP-Ba-8JF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KKs-F1-ipa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1RH-c2-4sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="826"/>
         </scene>
         <!--Create Task View Controller-->
         <scene sceneID="RqE-H8-vSD">
@@ -71,8 +90,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5BS-bP-ANN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5BS-bP-ANN">
                                 <rect key="frame" x="139" y="101" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -98,12 +118,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="5BS-bP-ANN" firstAttribute="leading" secondItem="T3q-JU-Lll" secondAttribute="leadingMargin" constant="123" id="R79-sU-swt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5BS-bP-ANN" secondAttribute="trailing" constant="123" id="WNK-g5-iiO"/>
-                            <constraint firstItem="5BS-bP-ANN" firstAttribute="leading" secondItem="T3q-JU-Lll" secondAttribute="leadingMargin" constant="123" id="srJ-wf-Bwl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5BS-bP-ANN" secondAttribute="trailing" constant="123" id="tky-O0-ks6"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="importantSwitch" destination="2Kc-Ym-9JN" id="0Hz-xu-nZE"/>

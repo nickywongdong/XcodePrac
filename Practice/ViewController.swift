@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var tasks : [Task] = []
@@ -36,9 +36,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.textLabel?.text = "🖕🏼\(task.name)"
         }
         else{
-         cell.textLabel?.text = task.name
+            cell.textLabel?.text = task.name
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let task = tasks[indexPath.row]
+            performSegue(withIdentifier: "selectTaskSegue", sender: task)
     }
     
     func makeTasks() -> [Task] {
@@ -57,11 +62,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return [task1, task2, task3]
         
     }
-
+    
     @IBAction func plusTapped(_ sender: Any) {
         performSegue(withIdentifier: "addSegue", sender: nil)
     }
-
-     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addSegue"{
+            let nextVC = segue.destination as!
+            CreateTaskViewController
+            nextVC.previousVC = self
+        }
+        
+        if segue.identifier == "addSegue"{
+            
+        }
+    }
 }
 
